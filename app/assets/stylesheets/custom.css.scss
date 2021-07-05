@@ -1,0 +1,178 @@
+@import 'semantic-ui';
+@import 'semantic-ui/collections/menu';
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: -webkit-linear-gradient(top, #26292ba6 40%, transparent);
+  }
+
+  & > div {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.ui.inverted.menu {
+  background: #1d2d3e;
+}
+
+body {
+  padding-top: 80px;
+  background: #26292b;
+}
+
+.text-white {
+  color: white !important;
+}
+
+* {
+  color: #b1b1b1;
+}
+
+.ui.form .field > label {
+  color: #b1b1b1 !important;
+}
+
+h4 {
+  margin-top: 0 !important;
+}
+
+.ui.cards > .card, .ui.card {
+  background: #1d2d3e !important;
+}
+
+.ui.card {
+  box-shadow: none !important;
+  border: 1px solid #2d4661;
+  width: 100%;
+}
+
+.ui.inverted.menu {
+  width: 100%;
+}
+
+.width-100 {
+  width: 100% !important;
+}
+
+.ui.icon.header .circular.icon {
+  box-shadow: none !important;
+  border: 2px solid #2d4661 !important;
+}
+
+.chatbox {
+  height: 450px !important;
+}
+.messagesContainer{
+  overflow: auto;
+  max-height: calc(450px - 65px);
+}
+.summary {
+  color: #b1b1b1 !important;
+
+  & > em {
+    color: white !important;
+  }
+}
+
+.ui.form .fields .field .ui.input input, .ui.form .field .ui.input input {
+  background: #2e3d4c !important;
+  color: white;
+  border: none !important;
+}
+
+.ui.icon.input > i.icon {
+  cursor: pointer !important;
+}
+
+.button.submit.custom {
+  background: transparent;
+  border: none;
+  padding: 0;
+
+  > i {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin: 0 0 0 5px;
+    font-size: 14pt;
+    padding: 10px 4px 0 0 !important;
+  }
+}
+
+.ui.placeholder.segment {
+  background: #1d2d3e;
+  border: 1px solid #2d4865;
+  margin-top: 50px;
+}
+
+.ui.vertical.divider:before, .ui.vertical.divider:after {
+  border-color: #294665 !important;
+}
+
+.ui.vertical.divider {
+  color: white;
+}
+
+.ui.positive.message {
+  background-color: #8bc34a2e !important;
+  box-shadow: none;
+  border: 1px solid #8bc34a2e;
+  color: #5cab00;
+  & > i {
+    color: #5cab00;
+  }
+}
+.ui.warning.message {
+  background-color: #c34a4a2e !important;
+  box-shadow: none;
+  border: 1px solid #c34a4a2e;
+  color: #ff7171;
+  & > i {
+    color: #ff7171;
+  }
+}
+.ui.info.message {
+  background-color: #4a7dc32e !important;
+  box-shadow: none;
+  border: 1px solid #4a88c32e;
+  color: #71a3ff;
+  & > i {
+    color: #71a3ff;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

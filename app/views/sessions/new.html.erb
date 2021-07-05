@@ -1,0 +1,53 @@
+<h4 class="ui center aligned icon header text-white">
+  <i class="circular red coffee icon"></i>
+  Log In to your Account
+</h4>
+
+
+
+<div class="ui placeholder segment">
+  <div class="ui two column very relaxed stackable grid">
+    <div class="column">
+
+
+      <%= form_with(scope: :session, url: login_path, local: true, class: 'ui form') do |f| %>
+
+
+        <div class="field">
+          <%= f.label :username %>
+          <div class="ui left icon input">
+            <%= f.text_field :username, placeholder: 'Type your Username', type: 'text', required: true %>
+            <i class="user icon"></i>
+          </div>
+        </div>
+
+        <div class="field">
+          <%= f.label :password %>
+          <div class="ui left icon input">
+            <%= f.text_field :password, placeholder: 'Type your Username', type: 'password', required: true %>
+            <i class="user icon"></i>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="ui left icon width-100">
+            <%= f.submit("Login", class: 'ui blue submit button red left width-100') %>
+          </div>
+        </div>
+
+
+      <% end %>
+
+
+    </div>
+    <div class="middle aligned column">
+      <a href="<%= signup_path %>" class="ui big button red">
+        <i class="signup icon text-white"></i>
+        Sign Up
+      </a>
+    </div>
+  </div>
+  <div class="ui vertical divider">
+    Or
+  </div>
+</div>

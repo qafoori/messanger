@@ -1,0 +1,21 @@
+<div class="ui fixed-top" style="padding: 20px">
+  <div class="ui small inverted menu">
+    <a href='<%= root_path %>' class="item red active">
+      MessageME!
+    </a>
+    <a class="item">
+      Messages
+    </a>
+    <div class="right menu">
+      <div class="item">
+        <% if logged_in? %>
+          <div class="ui inverted black" style="margin-right: 20px; color: white"><%= current_user.username %></div>
+          <%= link_to "Logout", logout_path, method: :delete, class: 'ui inverted black button' %>
+        <% else %>
+          <a href='<%= login_path %>' class="ui inverted black button" style="margin-right: 5px">Login</a>
+          <a href="<%= signup_path %>" class="ui inverted black button">Sign Up</a>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

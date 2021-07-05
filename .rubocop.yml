@@ -1,0 +1,26 @@
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Layout/EndOfLine:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Style/SafeNavigation:
+  Enabled: false
+
+Style/NegatedIf:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Layout/TrailingWhitespace:
+  Enabled: false
